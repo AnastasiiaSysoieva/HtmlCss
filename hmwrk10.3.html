@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="RU">
+
+<head>
+    <meta charset="UTF-8">
+    <title>sayt</title>
+    <style>
+        body {
+
+            margin: 0;
+            font-family: Corbel;
+            width: 1904px;
+            height: auto;
+
+
+        }
+
+        header {
+            position: absolute;
+            top: 30px;
+            left: 30px;
+        }
+
+        .sec1 {
+
+
+            display: inline-grid;
+            justify-content: center;
+            justify-items: center;
+            text-align: center;
+            margin: 119px -85px 0 578px;
+
+        }
+
+        h1 {
+            font-size: 64px;
+            color: #14931F;
+
+        }
+
+        h2 {
+            text-align: center;
+            color: #14931F;
+            font-size: 48px;
+            /* margin-left: 837px; */
+        }
+
+        button {
+            margin-top: 20px;
+            font-size: 24px;
+            color: white;
+            background-color: #14931F;
+            padding: 10px 30px;
+            border: none;
+            border-radius: 40px;
+        }
+
+        p {
+            font-size: 24px;
+            color: #646F75;
+
+        }
+
+        .grid {
+            display: grid;
+            /* grid-template-columns: auto auto auto; */
+            grid-template-columns: 300px 300px 300px;
+            grid-template-rows: 100px 100px 100px;
+            gap: 40px;
+
+            /* margin: 58px 43px 0 424px; */
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+
+        }
+
+        .grid>div {
+            color: #646F75;
+            text-align: center;
+            padding: 40px 20px;
+            font-size: 24px;
+            background-color: #DFDBF5;
+            /* text-wrap: nowrap; */
+            border-radius: 40px;
+
+        }
+
+        .grid>div:hover {
+            background-color: #14931F;
+            color: white;
+        }
+
+        .price {
+
+
+
+            background-color: #DFDBF5;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 40px;
+            margin: 0 auto;
+            padding: 50px 20px;
+            flex-wrap: wrap;
+
+        }
+
+        .price>div {
+            display: flex;
+            gap: 40px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .inf1,
+        .inf2,
+        .inf3 {
+            /* display: table-cell;
+            background-color: white;
+            border-radius: 20px;
+            padding: 30px; */
+            background-color: white;
+            border-radius: 40px;
+            padding: 30px;
+            width: 275px;
+            margin: 20px;
+            /* height: 250px; */
+            /* Фиксированная ширина карточек */
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        ul {
+            list-style: none;
+            font-size: 18px;
+            padding: 10px;
+            /* text-align: center; */
+
+        }
+
+        h3 {
+            font-size: 24px;
+            text-align: center;
+            color: #14931F;
+        }
+
+        li {
+            padding: 10px;
+            color: #646F75;
+
+        }
+
+        .inf1>button {
+            float: right;
+            margin-top: 82px;
+            color: #646F75;
+            background-color: white;
+            border: 1px solid #646F75;
+        }
+
+
+        .inf2>button {
+            float: right;
+            margin-top: 61px;
+            color: #646F75;
+            background-color: white;
+            border: 1px solid #646F75;
+        }
+
+        .inf3>button {
+            float: right;
+            margin-top: 43px;
+            color: #646F75;
+            background-color: white;
+            border: 1px solid #646F75;
+        }
+
+        .inf1>p {
+            float: inline-start;
+            font-size: 48px;
+            margin-top: 67px;
+            text-indent: 2px;
+        }
+
+        .inf2>p {
+            float: inline-start;
+            font-size: 48px;
+            color: white;
+        }
+
+        .inf3>p {
+            float: inline-start;
+            font-size: 48px;
+            margin-top: 27px;
+        }
+
+        li>img {
+            padding-right: 10px;
+        }
+
+        .inf2 {
+            background-color: #14931F;
+
+        }
+
+        .inf2>H3 {
+            color: white;
+        }
+
+        .inf2 ul li {
+            color: white;
+        }
+
+        .inf2 ul li img {
+            filter: brightness(0) invert(1);
+        }
+
+        .inf1>button:hover {
+            background-color: #14931F;
+            color: white;
+        }
+
+        .inf3>button:hover {
+            background-color: #14931F;
+            color: white;
+        }
+
+        .price-title {
+            font-size: 48px;
+            color: #14931F;
+            text-align: center;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        footer{
+            background-color: #14931F;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="Логотип.png" alt="logo">
+    </header>
+
+    <div class="sec1">
+        <h1>Чудовий зір для всіх!</h1>
+        <p>Ми допоможемо вам виправити та покращити ваш зір в короткий термін</p>
+        <button>Почати</button>
+    </div>
+    <!-- Послуги -->
+    <div>
+        <h2>Послуги</h2>
+        <div class="grid">
+            <div>Перевірка зору</div>
+            <div>Дитяче відділення</div>
+            <div>Лазерна корекція зору</div>
+            <div>Лікування кератоконусу</div>
+            <div>Лазерне лікування захворювань ока</div>
+            <div>Лікування катаракти</div>
+        </div>
+    </div>
+    <!-- Послуги -->
+    <!-- Прайс -->
+    <div class="price">
+
+        <h2 class="price-title">Ціни</h2>
+
+        <div>
+            <!-- <div>
+                <h2 class="price-title">Ціни</h2>
+            </div> -->
+            <div class="inf1">
+                <h3>Діагностика</h3>
+                <ul>
+                    <li><img src="icon1.svg" alt="">Комплексний огляд</li>
+                    <li><img src="icon1.svg" alt="">Скринінг поразки ока при діабеті</li>
+                    <li><img src="icon1.svg" alt="">Комплексний огляд з додатковим сервісом</li>
+                </ul>
+                <p>75$</p>
+                <button>Купити</button>
+            </div>
+            <div class="inf2">
+                <h3>Послуги комфорту </h3>
+                <ul>
+                    <li><img src="icon1.svg" alt="">Денний стаціонар </li>
+                    <li><img src="icon1.svg" alt="">Надання медичної допомоги</li>
+                    <li><img src="icon1.svg" alt="">Нагляд лікаря вдень</li>
+                    <li><img src="icon1.svg" alt="">Терапія тривожних станів</li>
+                </ul>
+                <p>100$</p>
+                <button>Купити</button>
+            </div>
+            <div class="inf3">
+                <h3>Апаратне лікування</h3>
+                <ul>
+                    <li><img src="icon1.svg" alt="">Пакет "Амбліопія"</li>
+                    <li><img src="icon1.svg" alt="">Пакет "Косоокість"</li>
+                    <li><img src="icon1.svg" alt="">Пакет "Резерви акомодації"</li>
+                    <li><img src="icon1.svg" alt="">Пакет "Косоокість + Амбліопія"</li>
+                </ul>
+                <p>30$</p>
+                <button>Купити</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Прайс -->
+    <!-- Footer -->
+    <footer>
+        <div>
+            <p><img src="icon1.svg" alt="">Усі права захищені</p>
+        </div>
+    </footer>
+</body>
+
+</html>
